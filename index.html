@@ -1,26 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Arcatec</title>
-</head>
-<body class="">
+  </head>
+  <body class="">
     <header class="bg-primaryBlack text-primaryWhite">
-        <nav class="max-w-[1600px] mx-auto md:px-12">
-            <!-- logo -->
-            <div class="flex items-center gap-2">
-                <img src="./images/icons/logo.svg" alt="">
-                <h1 class="text-[34px] font-medium">Arcatec</h1>
-            </div>
-            <div>
+      <nav
+        class="max-w-[1600px] mx-auto px-4 lg:px-12 flex items-center justify-between py-8"
+      >
+        <!-- logo -->
+        <div class="flex items-center gap-[10px]">
+          <img src="./images/icons/logo.svg" alt="" />
+          <h1 class="text-[34px] font-medium">Arcatec</h1>
+        </div>
+        <ul
+          class="flex-1 pl-[120px] uppercase font-medium flex items-center lg:gap-12"
+        >
+          <li>
+            <a
+              href=""
+              class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+              >pages</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+              >blog</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+              >shop</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+              >contact</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center gap-12">
+          <p class="">+123 456789</p>
+          <button
+            class="uppercase bg-yellowGreen text-primaryBlack font-medium flex items-center gap-3 py-3 px-6 rounded-sm hover:rounded-xl transition-all duration-300 group"
+          >
+            get in touch
+            <img
+              src="./images/icons/arrow_outward.svg"
+              alt=""
+              class="group-hover:rotate-45 transition-all duration-300"
+            />
+          </button>
+        </div>
+      </nav>
 
+      <!-- banner  -->
+      <section>
+        <div
+          class="text-primaryWhite flex items-center justify-center py-[140px]"
+        >
+          <h1
+            class="w-[743px] text-[80px] font-medium uppercase leading-[94px]"
+          >
+            Creating architecture that reflects your vision
+          </h1>
+          <p class="w-[523px] text-lg font-normal leading-[30px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </p>
+        </div>
+        <!--banner image  -->
+        <div class="relative">
+          <img
+            src="./images/bannerImage.png"
+            alt=""
+            class="max-w-[1504px] mx-auto"
+          />
+
+          <!--  circle animation -->
+          <div
+            class="w-[300px] h-[300px] bg-yellowGreen rounded-full absolute -top-40 left-2/3 -translate-x-1/3"
+          >
+            <div
+              id="text"
+              class="text-[19px] font-medium uppercase text-primaryBlack absolute w-full h-full animate-text-rotate"
+            >
+              <p>get in touch — get in touch — get in touch —</p>
             </div>
-        </nav>
+            <img
+              src="./images/icons/call_made.svg"
+              alt=""
+              class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+            />
+          </div>
+
+          <div
+            class="w-[1290px] mx-auto flex items-center justify-between py-[130px]"
+          >
+            <img src="./images/icons/Direct.svg" alt="" />
+            <img src="./images/icons/Flow.svg" alt="" />
+            <img src="./images/icons/Together.svg" alt="" />
+            <img src="./images/icons/Union.svg" alt="" />
+            <img src="./images/icons/Piece.svg" alt="" />
+            <img src="./images/icons/Direct.svg" alt="" />
+          </div>
+        </div>
+      </section>
     </header>
-    <main class="max-w-[1600px] mx-auto">
-
+    <main class="max-w-[1600px] mx-auto h-[2000px]">
+      <!-- services  -->
+      <section class="mt-[140px] bg-primaryWhite">
+        <p class="text-ash font-medium leading-6 uppercase text-center">
+          Our services
+        </p>
+        <h2
+          class="text-primaryBlack text-[44px] font-medium leading-[56px uppercase] mt-3 text-center"
+        >
+          We shape the life of tomorrow
+        </h2>
+        <!-- card box  -->
+        <div class="mt-[60px] text-primaryBlack px-[155px] grid grid-cols-3 gap-6">
+            <!-- card 1  -->
+          <div class="p-10 bg-white">
+            <img src="./images/services/hospital-building 1.svg" alt="" />
+            <h3 class="text-[26px] font-medium leading-9 uppercase pt-[60px]">
+              Commercial
+            </h3>
+            <p class="text-lg font-normal leading-[30px] pt-4">
+              Lorem ipsum dolor adipiscing elit suspendisse varius enim
+              elementum tristique. Duis cursus
+            </p>
+            <button
+              class="bg-yellowGreen px-6 py-3 flex items-center justify-between w-full mt-[60px]"
+            >
+              view details
+              <img src="./images/icons/arrow_outward.svg" alt="" />
+            </button>
+          </div>
+            <!-- card 2  -->
+          <div class="p-10 bg-white">
+            <img src="./images/services/hospital-building 1.svg" alt="" />
+            <h3 class="text-[26px] font-medium leading-9 uppercase pt-[60px]">
+              Commercial
+            </h3>
+            <p class="text-lg font-normal leading-[30px] pt-4">
+              Lorem ipsum dolor adipiscing elit suspendisse varius enim
+              elementum tristique. Duis cursus
+            </p>
+            <button
+              class="bg-yellowGreen px-6 py-3 flex items-center justify-between w-full mt-[60px]"
+            >
+              view details
+              <img src="./images/icons/arrow_outward.svg" alt="" />
+            </button>
+          </div>
+            <!-- card 3  -->
+          <div class="p-10">
+            <img src="./images/services/hospital-building 1.svg" alt="" />
+            <h3 class="text-[26px] font-medium leading-9 uppercase pt-[60px]">
+              Commercial
+            </h3>
+            <p class="text-lg font-normal leading-[30px] pt-4">
+              Lorem ipsum dolor adipiscing elit suspendisse varius enim
+              elementum tristique. Duis cursus
+            </p>
+            <button
+              class="bg-yellowGreen px-6 py-3 flex items-center justify-between w-full mt-[60px]"
+            >
+              view details
+              <img src="./images/icons/arrow_outward.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <script>
+      const text = document.querySelector("#text p");
+      text.innerHTML = text.innerText
+        .split("")
+        .map(
+          (char, i) =>
+            `<span style="transform:rotate(${i * 8}deg)">${char}</span>`
+        )
+        .join("");
+    </script>
+  </body>
 </html>

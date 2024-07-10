@@ -6,7 +6,18 @@ module.exports = {
       colors: {
         "primaryBlack": "#050505",
         "primaryWhite": "#F5F5F5",
+        "yellowGreen": "#C6F906",
+        "ash": "#959595",
       }
+    },
+    keyframes: {
+      textRotation: {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      },
+    },
+    animation: {
+      'text-rotate': 'textRotation 12s linear infinite',
     },
   },
   plugins: [],
