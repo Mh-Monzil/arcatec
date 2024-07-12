@@ -16,8 +16,7 @@
           <img src="./images/icons/logo.svg" alt="" />
           <h1 class="text-[34px] font-medium">Arcatec</h1>
         </div>
-        <ul
-          class="flex-1 pl-[120px] uppercase font-medium flex items-center lg:gap-12"
+        <ul class="hidden flex-1 pl-[120px] uppercase font-medium lg:flex items-center lg:gap-12 "
         >
           <li>
             <a
@@ -62,8 +61,8 @@
             >
           </li>
         </ul>
-        <div class="flex items-center gap-12">
-          <p class="">+123 456789</p>
+        <div class="hidden lg:flex items-center gap-12">
+          <p class="hidden xl:flex">+123 456789</p>
           <button
             class="uppercase bg-yellowGreen text-primaryBlack font-medium flex items-center gap-3 py-3 px-6 rounded-sm hover:rounded-xl transition-all duration-300 group"
           >
@@ -75,19 +74,22 @@
             />
           </button>
         </div>
+        <div>
+          <img src="./images/icons/menu.svg" alt="" class="block lg:hidden w-8">
+        </div>
       </nav>
 
       <!-- banner  -->
       <section class="max-w-[1600px] mx-auto">
         <div
-          class="text-primaryWhite flex items-center justify-center py-[140px]"
+          class="text-primaryWhite text-center lg:text-left flex flex-col lg:flex-row items-center justify-center gap-6 p-6 pb-24 lg:py-[140px]"
         >
           <h1
-            class="w-[743px] text-[80px] font-medium uppercase leading-[94px]"
+            class="max-w-[743px] text-4xl sm:text-5xl md:text-6xl lg:text-[80px] font-medium uppercase leading-[50px] lg:leading-[94px]"
           >
             Creating architecture that reflects your vision
           </h1>
-          <p class="w-[523px] text-lg font-normal leading-[30px]">
+          <p class="max-w-[523px] text-lg font-normal leading-[30px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique. Duis cursus, mi quis
             viverra ornare, eros dolor interdum nulla, ut commodo diam libero
@@ -102,7 +104,7 @@
 
           <!--  circle animation -->
           <div
-            class="w-[300px] h-[300px] bg-yellowGreen rounded-full absolute -top-40 left-2/3 -translate-x-1/3"
+            class="hidden w-[300px] h-[300px] bg-yellowGreen rounded-full absolute -top-40 left-2/3 -translate-x-1/3"
           >
             <div
               id="text"
@@ -118,21 +120,21 @@
           </div>
 
           <div
-            class="w-[1290px] mx-auto flex items-center justify-between py-[130px]"
+            class="hidden w-[1290px] mx-auto grid grid-cols-2 py-[130px]"
           >
-            <img src="./images/icons/Direct.svg" alt="" />
-            <img src="./images/icons/Flow.svg" alt="" />
-            <img src="./images/icons/Together.svg" alt="" />
-            <img src="./images/icons/Union.svg" alt="" />
-            <img src="./images/icons/Piece.svg" alt="" />
-            <img src="./images/icons/Direct.svg" alt="" />
+            <img src="./images/icons/Direct.svg" alt="" class="w-[80px] mx-auto" />
+            <img src="./images/icons/Flow.svg" alt="" class="mx-auto" />
+            <img src="./images/icons/Together.svg" alt="" class="mx-auto" />
+            <img src="./images/icons/Union.svg" alt="" class="mx-auto" />
+            <img src="./images/icons/Piece.svg" alt="" class="mx-auto" />
+            <img src="./images/icons/Direct.svg" alt="" class="mx-auto" />
           </div>
         </div>
       </section>
     </header>
     <main class="max-w-[1600px] mx-auto">
       <!-- services  -->
-      <section class="py-[140px] bg-primaryWhite px-[155px]">
+      <section class="hidden py-[140px] bg-primaryWhite px-[155px]">
         <p class="text-ash font-medium leading-6 uppercase text-center">
           Our services
         </p>
@@ -236,8 +238,7 @@
       </section>
 
       <!-- about  -->
-      <section
-        class="flex items-center justify-center gap-[132px] py-[140px] px-[155px]"
+      <section class="hidden flex items-center justify-center gap-[132px] py-[140px] px-[155px]"
       >
         <img src="./images/about/aboutImage.png" alt="" />
         <div class="text-primaryBlack">
@@ -264,7 +265,7 @@
       </section>
 
       <!-- gallery  -->
-      <section>
+      <section class="hidden">
         <div
           class="text-primaryBlack flex items-center justify-center gap-4 text-lg font-medium leading-[30px]"
         >
@@ -279,7 +280,7 @@
 
         <!-- image gallery  -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-12 pt-[60px]"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-12 pt-[60px]"
         >
           <!-- image 1  -->
           <div class="relative max-w-[485px] mx-auto overflow-hidden group">
@@ -465,8 +466,7 @@
       </section>
 
       <!-- our philosophy  -->
-      <section
-        class="text-primaryBlack px-[155px] py-[140px] flex items-center justify-between gap-[133px]"
+      <section class="hidden text-primaryBlack px-[155px] py-[140px] flex items-center justify-between gap-[133px]"
       >
         <!-- left  -->
         <div class="w-1/2">
@@ -546,7 +546,7 @@
       </section>
 
       <!-- team  -->
-      <section class="bg-primaryWhite px-[155px] py-[140px]">
+      <section class="hidden bg-primaryWhite px-[155px] py-[140px]">
         <p class="text-ash font-medium leading-6 uppercase text-center">
           meet with team
         </p>
@@ -700,7 +700,7 @@
       </section>
 
       <!-- articles  -->
-      <section class="bg-primaryWhite pb-[140px] px-[155px]">
+      <section class="hidden bg-primaryWhite pb-[140px] px-[155px]">
         <p class="text-ash font-medium leading-6 uppercase text-center">
           Latest Articles
         </p>
@@ -830,7 +830,7 @@
       </section>
 
       <!-- connect with us -->
-      <section class="bg-primaryWhite px-[155px]">
+      <section class="hidden bg-primaryWhite px-[155px]">
         <hr />
         <div class="pt-[100px] pb-[140px] text-center">
           <p class="text-ash font-medium leading-6 uppercase">
@@ -855,7 +855,7 @@
       </section>
     </main>
 
-    <footer class="bg-primaryBlack">
+    <footer class="hidden bg-primaryBlack">
       <section
         class="max-w-[1600px] mx-auto py-[143px] px-[155px] text-primaryWhite"
       >
