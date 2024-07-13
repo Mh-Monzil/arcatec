@@ -35,16 +35,16 @@
 
 
 
-Slideshow container
+/* Slideshow container */
 .slideshow-container {
 	position: relative;
-	background: #f1f1f1f1;
+	/* background: #050505; */
   }
   
   /* Slides */
   .mySlides {
 	display: none;
-	padding: 80px;
+	padding: 0 80px;
 	text-align: center;
   }
   
