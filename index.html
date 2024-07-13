@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Arcatec</title>
   </head>
@@ -82,20 +84,16 @@
             class="block lg:hidden w-8 cursor-pointer"
           />
         </div>
-        <div id="toggleClose" class=" hidden lg:hidden w-8 cursor-pointer">
-          <img
-            src="./images/icons/close.svg"
-            alt=""
-            class=""
-          />
+        <div id="toggleClose" class="hidden lg:hidden w-8 cursor-pointer">
+          <img src="./images/icons/close.svg" alt="" class="" />
         </div>
         <!-- toggle nav  -->
         <div
-        id="toggleNav"
-          class=" lg:hidden h-screen w-80 absolute -left-80 border-r border-t border-gray-700 top-28 bg-primaryBlack pt-6 z-30 transition-all duration-300 ease-in"
+          id="toggleNav"
+          class="lg:hidden h-screen w-80 absolute -left-80 border-r border-t border-gray-700 top-28 bg-primaryBlack pt-6 z-30 transition-all duration-300 ease-in"
         >
           <ul
-            class="text-center uppercase font-medium  text-primaryWhite space-y-4"
+            class="text-center uppercase font-medium text-primaryWhite space-y-4"
           >
             <li class="closeNav">
               <a
@@ -246,7 +244,7 @@
                 elementum tristique. Duis cursus
               </p>
               <button
-                class=" bg-yellowGreen px-6 py-3 flex items-center justify-between w-full mt-[60px]"
+                class="bg-yellowGreen px-6 py-3 flex items-center justify-between w-full mt-[60px]"
               >
                 view details
                 <img src="./images/icons/arrow_outward.svg" alt="" />
@@ -318,7 +316,7 @@
 
       <!-- about  -->
       <section
-        class=" flex flex-col-reverse lg:flex-row items-center justify-center gap-20 lg:gap-[132px] py-12 px-4 lg:py-[140px] lg:px-[155px]"
+        class="flex flex-col-reverse lg:flex-row items-center justify-center gap-20 lg:gap-[132px] py-12 px-4 lg:py-[140px] lg:px-[155px]"
       >
         <div class="lg:w-1/2">
           <img src="./images/about/aboutImage.png" alt="" />
@@ -549,7 +547,7 @@
 
       <!-- our philosophy  -->
       <section
-        class=" text-primaryBlack px-4 py-12 lg:px-[155px] lg:py-[140px] flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-[133px]"
+        class="text-primaryBlack px-4 py-12 lg:px-[155px] lg:py-[140px] flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-[133px]"
       >
         <!-- left  -->
         <div class="lg:w-1/2">
@@ -629,7 +627,7 @@
       </section>
 
       <!-- team  -->
-      <section class=" bg-primaryWhite px-4 py-12  lg:px-[155px] lg:py-[140px]">
+      <section class="bg-primaryWhite px-4 py-12 lg:px-[155px] lg:py-[140px]">
         <p class="text-ash font-medium leading-6 uppercase text-center">
           meet with team
         </p>
@@ -783,7 +781,7 @@
       </section>
 
       <!-- articles  -->
-      <section class=" bg-primaryWhite px-4 pb-12 lg:pb-[140px] lg:px-[155px]">
+      <section class="bg-primaryWhite px-4 pb-12 lg:pb-[140px] lg:px-[155px]">
         <p class="text-ash font-medium leading-6 uppercase text-center">
           Latest Articles
         </p>
@@ -794,10 +792,10 @@
         </h2>
         <!-- card  -->
         <div
-          class="mt-[60px] text-primaryBlack grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-[60px]"
+          class="owl-carousel mt-[60px] text-primaryBlack grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-[60px]"
         >
           <!-- card - 1  -->
-          <div class="bg-white max-w-[414px] mx-auto hover:shadow-shadowSmall">
+          <div class=" bg-white max-w-[414px] mx-auto hover:shadow-shadowSmall">
             <div class="relative">
               <img
                 src="./images/articles/article1.png"
@@ -913,7 +911,7 @@
       </section>
 
       <!-- connect with us -->
-      <section class=" bg-primaryWhite px-4 lg:px-[155px]">
+      <section class="bg-primaryWhite px-4 lg:px-[155px]">
         <hr />
         <div class="pt-12 pb-20 lg:pt-[100px] lg:pb-[140px] text-center">
           <p class="text-ash font-medium leading-6 uppercase">
@@ -936,9 +934,12 @@
           </button>
         </div>
       </section>
+
+      <!-- slider  -->
+      
     </main>
 
-    <footer class=" bg-primaryBlack">
+    <footer class="bg-primaryBlack">
       <section
         class="max-w-[1600px] mx-auto py-12 px-4 lg:py-[143px] lg:px-[155px] text-primaryWhite"
       >
@@ -1006,7 +1007,9 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row items-center justify-between mt-[140px]">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mt-[140px]"
+        >
           <p class="text-lg font-normal leading-[30px]">© 2023 MirrorTheme</p>
           <div class="flex flex-col md:flex-row items-center gap-4">
             <div>
@@ -1046,6 +1049,10 @@
       </section>
     </footer>
 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
