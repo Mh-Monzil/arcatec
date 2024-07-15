@@ -11,58 +11,123 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <script src="https://kit.fontawesome.com/284e3f8804.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Arcatec</title>
   </head>
   <body class="">
     <header class="bg-primaryBlack text-primaryWhite">
-      <nav
-        class="max-w-[1600px] mx-auto px-4 lg:px-12 flex items-center justify-between py-8"
+     <nav class="bg-primaryBlack top-0 z-40 w-full">
+      <div
+      class=" w-[95%] mx-auto flex items-center justify-between py-8 border-b-[1px] border-b-primaryWhite/10 "
+    >
+      <!-- logo -->
+      <div class="">
+        <img src="https://arcatec-html-dev.netlify.app/image/logo.svg" alt="" class="w-36 pb-1">
+      </div>
+      <ul
+        class="hidden flex-1 pl-[120px] uppercase font-medium lg:flex items-center lg:gap-12"
       >
-        <!-- logo -->
-        <div class="flex items-center gap-[10px]">
-          <img src="./images/icons/logo.svg" alt="" />
-          <h1 class="text-[34px] font-medium">Arcatec</h1>
+        <li class="relative flex items-center gap-2 hover:text-yellowGreen transition-all duration-300 ease-in-out group cursor-pointer">
+          <span class="h-[2px] w-0 bg-yellowGreen inline-block absolute -bottom-2 group-hover:w-full transition-all duration-300 ease-linear cursor-pointer"></span>
+          <a
+            href=""
+            >home</a
+          >
+          <i class="fa-sharp fa-solid fa-angle-down group-hover:rotate-180 transition-all duration-500 ease-in-out"></i>
+        </li>
+        <li>
+          <a
+            href=""
+            class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+            >about</a
+          >
+        </li>
+        <li class="relative flex items-center gap-2 hover:text-yellowGreen transition-all duration-300 ease-in-out group cursor-pointer">
+          <span class="h-[2px] w-0 bg-yellowGreen inline-block absolute -bottom-2 group-hover:w-full transition-all duration-300 ease-linear cursor-pointer"></span>
+          <a
+            href=""
+            >pages</a
+          >
+          <i class="fa-sharp fa-solid fa-angle-down group-hover:rotate-180 transition-all duration-500 ease-in-out"></i>
+        </li>
+        <li class="relative flex items-center gap-2 hover:text-yellowGreen transition-all duration-300 ease-in-out group cursor-pointer">
+          <span class="h-[2px] w-0 bg-yellowGreen inline-block absolute -bottom-2 group-hover:w-full transition-all duration-300 ease-linear cursor-pointer"></span>
+          <a
+            href=""
+            >blog</a
+          >
+          <i class="fa-sharp fa-solid fa-angle-down group-hover:rotate-180 transition-all duration-500 ease-in-out"></i>
+        </li>
+        <li>
+          <a
+            href=""
+            class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
+            >contact</a
+          >
+        </li>
+      </ul>
+      <div class="hidden lg:flex font-medium items-center gap-12">
+        <p class="hidden xl:flex ">+123 456789</p>
+        <div class="space-x-2">
+          <i class="fa-solid fa-bag-shopping text-white" ></i>
+          <span>Cart (0)</span>
         </div>
+      </div>
+      <div id="toggleMenu">
+        <img
+          src="./images/icons/menu.svg"
+          alt=""
+          class="block lg:hidden w-8 cursor-pointer"
+        />
+      </div>
+      <div id="toggleClose" class="hidden lg:hidden w-8 cursor-pointer">
+        <img src="./images/icons/close.svg" alt="" class="" />
+      </div>
+      <!-- toggle nav  -->
+      <div
+        id="toggleNav"
+        class="lg:hidden h-screen w-80 absolute -left-80 border-r border-t border-gray-700 top-28 bg-primaryBlack pt-6 z-30 transition-all duration-300 ease-in"
+      >
         <ul
-          class="hidden flex-1 pl-[120px] uppercase font-medium lg:flex items-center lg:gap-12"
+          class="text-center uppercase font-medium text-primaryWhite space-y-4"
         >
-          <li>
+          <li class="closeNav">
             <a
               href=""
               class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
               >home</a
             >
           </li>
-          <li>
+          <li class="closeNav">
             <a
               href=""
               class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
               >pages</a
             >
           </li>
-          <li>
+          <li class="closeNav">
             <a
               href=""
               class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
               >portfolio</a
             >
           </li>
-          <li>
+          <li class="closeNav">
             <a
               href=""
               class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
               >blog</a
             >
           </li>
-          <li>
+          <li class="closeNav">
             <a
               href=""
               class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
               >shop</a
             >
           </li>
-          <li>
+          <li class="closeNav">
             <a
               href=""
               class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
@@ -70,8 +135,8 @@
             >
           </li>
         </ul>
-        <div class="hidden lg:flex items-center gap-12">
-          <p class="hidden xl:flex">+123 456789</p>
+        <div class="flex flex-col items-center space-y-4 mt-20">
+          <p class="">+123 456789</p>
           <button
             class="uppercase bg-yellowGreen text-primaryBlack font-medium flex items-center gap-3 py-3 px-6 rounded-sm hover:rounded-xl transition-all duration-300 group"
           >
@@ -83,82 +148,9 @@
             />
           </button>
         </div>
-        <div id="toggleMenu">
-          <img
-            src="./images/icons/menu.svg"
-            alt=""
-            class="block lg:hidden w-8 cursor-pointer"
-          />
-        </div>
-        <div id="toggleClose" class="hidden lg:hidden w-8 cursor-pointer">
-          <img src="./images/icons/close.svg" alt="" class="" />
-        </div>
-        <!-- toggle nav  -->
-        <div
-          id="toggleNav"
-          class="lg:hidden h-screen w-80 absolute -left-80 border-r border-t border-gray-700 top-28 bg-primaryBlack pt-6 z-30 transition-all duration-300 ease-in"
-        >
-          <ul
-            class="text-center uppercase font-medium text-primaryWhite space-y-4"
-          >
-            <li class="closeNav">
-              <a
-                href=""
-                class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
-                >home</a
-              >
-            </li>
-            <li class="closeNav">
-              <a
-                href=""
-                class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
-                >pages</a
-              >
-            </li>
-            <li class="closeNav">
-              <a
-                href=""
-                class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
-                >portfolio</a
-              >
-            </li>
-            <li class="closeNav">
-              <a
-                href=""
-                class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
-                >blog</a
-              >
-            </li>
-            <li class="closeNav">
-              <a
-                href=""
-                class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
-                >shop</a
-              >
-            </li>
-            <li class="closeNav">
-              <a
-                href=""
-                class="hover:text-yellowGreen transition-all duration-300 ease-in-out"
-                >contact</a
-              >
-            </li>
-          </ul>
-          <div class="flex flex-col items-center space-y-4 mt-20">
-            <p class="">+123 456789</p>
-            <button
-              class="uppercase bg-yellowGreen text-primaryBlack font-medium flex items-center gap-3 py-3 px-6 rounded-sm hover:rounded-xl transition-all duration-300 group"
-            >
-              get in touch
-              <img
-                src="./images/icons/arrow_outward.svg"
-                alt=""
-                class="group-hover:rotate-45 transition-all duration-300"
-              />
-            </button>
-          </div>
-        </div>
-      </nav>
+      </div>
+      </div>
+     </nav>
 
       <!-- banner  -->
       <section class="max-w-[1600px] mx-auto">
@@ -237,9 +229,11 @@
         </div>
       </section>
     </header>
-    <main class="max-w-[1600px] mx-auto">
+    <main class="z-20">
       <!-- services  -->
-      <section class="py-12 px-4 lg:py-[140px] bg-primaryWhite lg:px-[155px]">
+      <section
+        class="max-w-[1600px] mx-auto py-12 px-4 lg:py-[140px] lg:px-[155px]"
+      >
         <p class="text-ash font-medium leading-6 uppercase text-center">
           Our services
         </p>
@@ -343,39 +337,43 @@
       </section>
 
       <!-- about  -->
-      <section
-        class="flex flex-col-reverse lg:flex-row items-center justify-center gap-20 lg:gap-[132px] py-12 px-4 lg:py-[140px] lg:px-[155px]"
-      >
-        <div class="lg:w-1/2">
-          <img src="./images/about/aboutImage.png" alt="" />
-        </div>
-        <div class="lg:w-1/2 text-primaryBlack">
-          <p class="uppercase text-ash font-medium leading-6">about company</p>
-          <h2
-            class="text-2xl leading-6 md:text-[44px] font-medium md:leading-[56px] uppercase pt-3"
-          >
-            We design buildings and interiors, landscapes and streetscapes
-          </h2>
-          <p class="text-lg font-normal leading-[30px] pt-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo
-          </p>
-          <button
-            class="uppercase bg-yellowGreen text-primaryBlack font-medium flex items-center gap-3 py-3 px-6 rounded-sm hover:rounded-xl transition-all duration-300 group mt-[60px]"
-          >
-            Learn more
-            <img
-              src="./images/icons/arrow_outward.svg"
-              alt=""
-              class="group-hover:rotate-45 transition-all duration-300"
-            />
-          </button>
-        </div>
+      <section class="bg-white">
+        <div
+          class="max-w-[1600px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-center gap-20 lg:gap-[132px] py-12 px-4 lg:py-[140px] lg:px-[155px]"
+        >
+          <div class="lg:w-1/2">
+            <img src="./images/about/aboutImage.png" alt="" />
+          </div>
+          <div class="lg:w-1/2 text-primaryBlack">
+            <p class="uppercase text-ash font-medium leading-6">
+              about company
+            </p>
+            <h2
+              class="text-2xl leading-6 md:text-[44px] font-medium md:leading-[56px] uppercase pt-3"
+            >
+              We design buildings and interiors, landscapes and streetscapes
+            </h2>
+            <p class="text-lg font-normal leading-[30px] pt-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+            </p>
+            <button
+              class="uppercase bg-yellowGreen text-primaryBlack font-medium flex items-center gap-3 py-3 px-6 rounded-sm hover:rounded-xl transition-all duration-300 group mt-[60px]"
+            >
+              about company
+              <img
+                src="./images/icons/arrow_outward.svg"
+                alt=""
+                class="group-hover:rotate-45 transition-all duration-300"
+              />
+            </button>
+          </div>
+        </d>
       </section>
 
       <!-- gallery  -->
-      <section class="">
+      <section class="bg-white">
         <div
           class="text-primaryBlack flex items-center justify-center gap-2 sm:gap-4 text-sm sm:text-lg font-medium leading-[30px]"
         >
@@ -393,12 +391,12 @@
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 lg:px-12 pt-[60px]"
         >
           <!-- image 1  -->
-          <div class="relative max-w-[485px] mx-auto overflow-hidden group">
+          <div class="relative w-full h-full overflow-hidden group">
             <div
               class="h-0 w-full absolute group-hover:bg-gradient-overlay group-hover:h-full transition-all duration-500 ease-out"
             ></div>
             <div>
-              <img src="./images/gallery/gallery1.png" alt="" />
+              <img src="./images/gallery/gallery1.png" alt="" class="w-full h-full" />
             </div>
             <div
               class="text-primaryWhite w-full absolute -top-36 flex justify-between p-6 sm:p-10 group-hover:-top-0 transition-all duration-500 ease-in-out"
@@ -423,12 +421,12 @@
             </button>
           </div>
           <!-- image 2  -->
-          <div class="relative max-w-[485px] mx-auto overflow-hidden group">
+          <div class="relative w-full h-full overflow-hidden group">
             <div
               class="h-0 w-full absolute group-hover:bg-gradient-overlay group-hover:h-full transition-all duration-500 ease-out"
             ></div>
             <div>
-              <img src="./images//gallery/gallery2.png" alt="" />
+              <img src="./images//gallery/gallery2.png" alt="" class="w-full h-full" />
             </div>
             <div
               class="text-primaryWhite w-full absolute -top-36 flex justify-between p-6 sm:p-10 group-hover:-top-0 transition-all duration-500 ease-in-out"
@@ -453,12 +451,12 @@
             </button>
           </div>
           <!-- image 3  -->
-          <div class="relative max-w-[485px] mx-auto overflow-hidden group">
+          <div class="relative w-full h-full overflow-hidden group">
             <div
               class="h-0 w-full absolute group-hover:bg-gradient-overlay group-hover:h-full transition-all duration-500 ease-out"
             ></div>
             <div>
-              <img src="./images//gallery/gallery3.png" alt="" />
+              <img src="./images//gallery/gallery3.png" alt="" class="w-full h-full" />
             </div>
             <div
               class="text-primaryWhite w-full absolute -top-36 flex justify-between p-6 sm:p-10 group-hover:-top-0 transition-all duration-500 ease-in-out"
@@ -483,12 +481,12 @@
             </button>
           </div>
           <!-- image 4  -->
-          <div class="relative max-w-[485px] mx-auto overflow-hidden group">
+          <div class="relative w-full h-full overflow-hidden group">
             <div
               class="h-0 w-full absolute group-hover:bg-gradient-overlay group-hover:h-full transition-all duration-500 ease-out"
             ></div>
             <div>
-              <img src="./images//gallery/gallery4.png" alt="" />
+              <img src="./images//gallery/gallery4.png" alt="" class="w-full h-full" />
             </div>
             <div
               class="text-primaryWhite w-full absolute -top-36 flex justify-between p-6 sm:p-10 group-hover:-top-0 transition-all duration-500 ease-in-out"
@@ -513,12 +511,12 @@
             </button>
           </div>
           <!-- image 5  -->
-          <div class="relative max-w-[485px] mx-auto overflow-hidden group">
+          <div class="relative w-full h-full overflow-hidden group">
             <div
               class="h-0 w-full absolute group-hover:bg-gradient-overlay group-hover:h-full transition-all duration-500 ease-out"
             ></div>
             <div>
-              <img src="./images//gallery/gallery5.png" alt="" />
+              <img src="./images//gallery/gallery5.png" alt="" class="w-full h-full" />
             </div>
             <div
               class="text-primaryWhite w-full absolute -top-36 flex justify-between p-6 sm:p-10 group-hover:-top-0 transition-all duration-500 ease-in-out"
@@ -543,12 +541,12 @@
             </button>
           </div>
           <!-- image 6  -->
-          <div class="relative max-w-[485px] mx-auto overflow-hidden group">
+          <div class="relative w-full h-full overflow-hidden group">
             <div
               class="h-0 w-full absolute group-hover:bg-gradient-overlay group-hover:h-full transition-all duration-500 ease-out"
             ></div>
             <div>
-              <img src="./images//gallery/gallery6.png" alt="" />
+              <img src="./images//gallery/gallery6.png" alt="" class="w-full h-full" />
             </div>
             <div
               class="text-primaryWhite w-full absolute -top-36 flex justify-between p-6 sm:p-10 group-hover:-top-0 transition-all duration-500 ease-in-out"
@@ -576,8 +574,9 @@
       </section>
 
       <!-- our philosophy  -->
-      <section
-        class="text-primaryBlack px-4 py-12 lg:px-[155px] lg:py-[140px] flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-[133px]"
+      <section class="bg-white">
+        <div
+        class="max-w-[1600px] mx-auto text-primaryBlack px-4 py-12 lg:px-[155px] lg:py-[140px] flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-[133px]"
       >
         <!-- left  -->
         <div class="lg:w-1/2">
@@ -654,10 +653,11 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       <!-- team  -->
-      <section class="bg-primaryWhite px-4 py-12 lg:px-[155px] lg:py-[140px]">
+      <section class="max-w-[1600px] mx-auto bg-primaryWhite px-4 py-12 lg:px-[155px] lg:py-[140px]">
         <p class="text-ash font-medium leading-6 uppercase text-center">
           meet with team
         </p>
@@ -811,33 +811,39 @@
       </section>
 
       <!-- testimonial  -->
-      <section
-        class="bg-primaryBlack px-4 py-12 lg:px-[155px] lg:py-[140px]"
-      >
+      <section class="bg-primaryBlack px-4 py-12 lg:px-[155px] lg:py-[140px]">
         <div class="slideshow-container">
           <div class="mySlides">
             <div>
               <img src="./images/icons/quote 1.svg" alt="" class="mx-auto" />
-              <p class="text-primaryWhite text-[28px] font-normal leading-[42px] border-b border-[#333333] pt-7 pb-10">
+              <p
+                class="text-primaryWhite text-[28px] font-normal leading-[42px] border-b border-[#333333] pt-7 pb-10"
+              >
                 "Diam sollicitudin tempor id eu nisl nunc. Tristique senectus et
                 netus et malesuada fames ac turpis egestas. Sed cras ornare arcu
                 dui vivamus."
               </p>
-              
-              <p class="text-primaryWhite font-normal leading-6 uppercase pt-7">Builder - Mark Donnel</p>
+
+              <p class="text-primaryWhite font-normal leading-6 uppercase pt-7">
+                Builder - Mark Donnel
+              </p>
             </div>
           </div>
 
           <div class="mySlides">
             <div>
               <img src="./images/icons/quote 1.svg" alt="" class="mx-auto" />
-              <p class="text-primaryWhite text-[28px] font-normal leading-[42px] border-b border-[#333333] pt-7 pb-10">
-                "Sed cras ornare arcu
-                dui vivamus. Diam sollicitudin tempor id eu nisl nunc. Tristique senectus et
-                netus et malesuada fames ac turpis egestas."
+              <p
+                class="text-primaryWhite text-[28px] font-normal leading-[42px] border-b border-[#333333] pt-7 pb-10"
+              >
+                "Sed cras ornare arcu dui vivamus. Diam sollicitudin tempor id
+                eu nisl nunc. Tristique senectus et netus et malesuada fames ac
+                turpis egestas."
               </p>
-              
-              <p class="text-primaryWhite font-normal leading-6 uppercase pt-7">Worker - Tim John</p>
+
+              <p class="text-primaryWhite font-normal leading-6 uppercase pt-7">
+                Worker - Tim John
+              </p>
             </div>
           </div>
 
@@ -847,7 +853,7 @@
       </section>
 
       <!-- articles  -->
-      <section class="bg-primaryWhite px-4 py-12 lg:py-[140px] lg:px-[155px]">
+      <section class="max-w-[1600px] mx-auto bg-primaryWhite px-4 py-12 lg:py-[140px] lg:px-[155px]">
         <p class="text-ash font-medium leading-6 uppercase text-center">
           Latest Articles
         </p>
@@ -986,7 +992,7 @@
       </section>
 
       <!-- connect with us -->
-      <section class="bg-primaryWhite px-4 lg:px-[155px]">
+      <section class="max-w-[1600px] mx-auto bg-primaryWhite px-4 lg:px-[155px]">
         <hr />
         <div class="pt-12 pb-20 lg:pt-[100px] lg:pb-[140px] text-center">
           <p class="text-ash font-medium leading-6 uppercase">
@@ -1126,6 +1132,111 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./script.js"></script>
+    <script>
+      const text = document.querySelector("#text p");
+      text.innerHTML = text.innerText
+        .split("")
+        .map(
+          (char, i) =>
+            `<span style="transform:rotate(${i * 8}deg)">${char}</span>`
+        )
+        .join("");
+
+      const toggleMenu = document.getElementById("toggleMenu");
+      const toggleNav = document.getElementById("toggleNav");
+      const toggleClose = document.getElementById("toggleClose");
+      const closeNav = document.querySelectorAll(".closeNav");
+
+      toggleMenu.addEventListener("click", () => {
+        // toggleNav.classList.add('absolute');
+        console.log("menu");
+        toggleNav.classList.remove("-left-80");
+        toggleNav.classList.add("left-0");
+        toggleClose.classList.remove("hidden");
+        toggleClose.classList.add("block");
+        toggleMenu.classList.remove("block");
+        toggleMenu.classList.add("hidden");
+      });
+
+      toggleClose.addEventListener("click", () => {
+        toggleNav.classList.remove("left-0");
+        toggleNav.classList.add("-left-80");
+        toggleClose.classList.remove("block");
+        toggleClose.classList.add("hidden");
+        toggleMenu.classList.remove("hidden");
+        toggleMenu.classList.add("block");
+      });
+
+      closeNav.forEach((e) => {
+        e.addEventListener("click", () => {
+          toggleNav.classList.remove("left-0");
+          toggleNav.classList.add("-left-80");
+          toggleClose.classList.remove("block");
+          toggleClose.classList.add("hidden");
+          toggleMenu.classList.remove("hidden");
+          toggleMenu.classList.add("block");
+        });
+      });
+
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 24,
+          autoplay: false,
+          nav: false,
+          navText: [
+            "<img src='./assets/icons/leftArrow.png' alt='Previous'>",
+            "<img src='./assets/icons/rightArrow.png' alt='Next'>",
+          ],
+          // autoplay: true,
+          // autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          responsiveClass: true,
+          responsive: {
+            // Responsive settings
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1024: {
+              items: 3,
+            },
+          },
+        });
+      });
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
